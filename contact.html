@@ -5,12 +5,17 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Suzanne Collins Books</title>
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Architects+Daughter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Suzanne Collins</h1>
-    <nav>
+  <header class="header">
+     <img src="images/SCsignature.png" alt="Suzanne Collins signature" />
+
+    <nav class="main-navigation">
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -18,14 +23,26 @@
         <li>
           <a href="bio.html">Bio</a>
         </li>
-        <li>
-         <a href="books.html">Books</a>
+        <li class="dropdown">
+          <a href="books.html" class="dropbtn">Books</a>
+          <div class="dropdown-content">
+            <a href="1hunger.html">The Hunger Games</a>
+            <a href="2catchingfire.html">Catching Fire</a>
+            <a href="3mockingjay.html">Mockingjay</a>
+            <a href="4yotj.html">Year of the Jungle</a>
+            <a href="5overlander.html">Gregor the Overlander</a>
+            <a href="6prophecy.html">Gregor and the Prophecy of Bane</a>
+            <a href="7warmbloods.html">Gregor and the Curse of the Warmbloods</a>
+            <a href="8secret.html">Gregor and the Marks of Secret</a>
+            <a href="9claw.html">Gregor and the Code of Claw</a>
+            <a href="10mcbutton.html">When Charlie McButton Lost Power</a>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="contact">
   <h1>Contact Information</h1>
     <h3>Queries regarding dramatic rights:</h3>
       <p>Jane Doe, Creative Talent Agency<br />123 Dream Blvd, Los Angeles, CA 90057</p>
@@ -41,10 +58,10 @@
       <p>I love hearing from my readers! Unfortunately, I am unable to respond to letters, emails and phone calls because of the volume of correspondence I receive.  I invite you to explore this website for general information and announcements about upcoming appearances where you might be able to have your questions answered.</p>
   </main>
 
-  <footer>
+  <footer class="footer">
     <ul>
       <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </li>
       <li>
         <a href="privacy.html">Privacy</a>

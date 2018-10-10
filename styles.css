@@ -1,0 +1,475 @@
+
+.header {
+  background: rgb(95, 34, 34);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* OLD (No Book Dropdown Menu) Navigation...
+
+.main-navigation {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-navigation ul {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation li {
+  font-family: 'Shadows Into Light';
+  font-size: 1.5em;
+  line-height: 40px;
+  height: 40px;
+  margin-right: 20px;
+  padding-top: 50px;
+
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: rgb(248, 246, 245);
+  display: block;
+}
+
+.main-navigation a:hover {
+  background-color:rgb(122, 104, 104);
+  padding-bottom: 25px;
+}
+
+.main-navigation a.active {
+  background-color: rgb(28, 123, 146);
+  cursor: default;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .main-navigation li {
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 3em;
+    display: inline-block;
+    margin-right: -5px;
+  }
+  .main-navigation a {
+    padding: 0 1em;
+  }
+}
+/* End OLD Navigation */
+
+/* Begin Current Navigation */
+.main-navigation {
+  float: right;
+  padding-right: 25px;
+}
+
+.main-navigation a.active {
+  background-color: rgb(28, 123, 146) !important;
+  cursor: default;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-navigation li {
+  font-family: 'Shadows Into Light';
+  font-size: 3em;
+  display: inline;
+  padding-top: 50px;
+  margin-right: -25px;
+}
+
+.main-navigation li a, .dropbtn {
+  display: inline-block;
+  color:rgb(248, 246, 245);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.main-navigation li a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(122, 104, 104);
+}
+
+.main-navigation li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-family: 'Antic Slab', serif;
+  font-size: .35em;
+  display: none;
+  position: absolute;
+  background-color: rgb(28, 123, 146);
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* End Current Navigation */
+
+/* When this media query is active, can't select items from dropdown Books menu...
+@media screen and (min-width: 600px) {
+  .main-navigation li {
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 3em;
+    display: inline-block;
+    margin-right: -5px;
+  }
+  .main-navigation a {
+    padding: 0 1em;
+  }
+*/
+
+/* Begin Home Page */
+.home {
+  background-color: rgb(240, 233, 218);
+}
+
+.landing img {
+  width: 100%;
+  padding-top: 120px;
+}
+
+.trilogy {
+  text-align: center;
+}
+.trilogy ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.trilogy li {
+  margin-right: -5px;
+  padding: 0;
+  display: inline-block;
+}
+
+.trilogy a:hover {
+  opacity: .5;
+}
+
+.trilogy img {
+  width: 300px;
+}
+
+.recent-news {
+  text-align: center;
+}
+
+.recent-news ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recent-news li {
+  width: 400px;
+  margin-right: -5px;
+  padding: 0;
+  display: inline-block;
+}
+
+.recent-news li:hover {
+  opacity: .5;
+}
+
+.recent-news figcaption {
+  font-family: 'Antic Slab', serif;
+  text-align: center;
+}
+/* End Home Page */
+
+/* Begin Bio Page */
+.bio {
+  background-color: rgb(240, 233, 218);
+  padding-top: 150px;
+}
+.bio img {
+  float: left;
+  padding-right: 40px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bio p {
+  font-weight: bold;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 1.2em;
+  font-family: 'Antic Slab', serif;
+  color: rgb(46, 7, 5);
+}
+
+.bio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bio li {
+  padding: 0;
+  display: inline-block;
+}
+
+.bio li:hover {
+  opacity: .5;
+}
+
+.articles {
+  text-align: center;
+}
+
+.articles img {
+  padding: 10px;
+  width: 450px;
+  height: 300px;
+}
+
+.videos {
+  text-align: center;
+  padding-bottom: 50px;
+}
+/* End Bio Page */
+
+/* Begin Books Page */
+.books {
+  background-color: rgb(240, 233, 218);
+  font-size: 1.2em;
+  font-family: 'Antic Slab', serif;
+}
+
+.coming-soon {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 175px;
+  overflow: hidden;
+}
+
+.coming-soon p {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.coming-soon img {
+  width: 400px;
+  float: left;
+  padding-right: 40px;
+}
+
+.previous-books {
+  column-count: 2;
+  padding: 20px;
+}
+.previous-books img {
+  width: 250px;
+  float: left;
+  padding-right: 10px;
+}
+
+.previous-books img:hover {
+  opacity: .5;
+}
+
+.cover-and-blurb {
+  overflow: hidden;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* End Books Page */
+
+
+/* Begin Universal Misc Design */
+img {
+  max-width: 100%;
+}
+
+h1 {
+  padding-left: 40px;
+  padding-top: 80px;
+  font-family: 'Shadows Into Light';
+  font-size: 5em;
+}
+h2 {
+  font-family: 'Shadows Into Light';
+  padding-top: 20px;
+  text-align: center;
+  font-size: 4em;
+  color: rgb(56, 8, 6)
+}
+/* End Universal Misc Design */
+
+/* Begin Contact Page */
+.contact {
+  font-family: Georgia, serif;
+  padding-left: 40px;
+
+}
+.contact h1 {
+  padding-left: 0;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 3em;
+  font-family: Georgia, serif;
+}
+
+.contact h3 {
+  font-size: 1.5em;
+}
+
+.contact p {
+  font-size: 1.2em;
+}
+
+.contact li {
+  font-size: 1.2em;
+}
+/* End Contact Page */
+
+/* Begin Privacy Page */
+.privacy {
+  font-family: Georgia, serif;
+  padding-left: 40px;
+}
+.privacy h1 {
+  padding-left: 0;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 3em;
+  font-family: Georgia, serif;
+}
+
+.privacy h3 {
+  font-size: 1.5em;
+}
+
+.privacy p {
+  font-size: 1.2em;
+}
+
+.privacy li {
+  font-size: 1.2em;
+}
+/* End Privacy Page */
+
+/* Begin Terms Page */
+.terms {
+  font-family: Georgia, serif;
+  padding-left: 40px;
+}
+.terms h1 {
+  padding-left: 0;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 3em;
+  font-family: Georgia, serif;
+}
+
+.terms h3 {
+  font-size: 1.5em;
+}
+
+.terms p {
+  font-size: 1.2em;
+}
+
+.terms li {
+  font-size: 1.2em;
+}
+/* End Terms Page */
+
+/* Begin Individual Book Pages */
+.book-page {
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+  background-color: rgb(240, 233, 218);
+  font-family: 'Antic Slab', serif;
+  font-size: 1.2em;
+}
+
+.book-page img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 350px;
+}
+/* End Individual Book Pages */
+
+/* Begin Footer */
+.footer {
+  width: 100%;
+  background-color:rgb(95, 34, 34);
+  color: white;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer li {
+  width: 300px;
+  display: inline-block;
+  font-family: 'Shadows Into Light';
+  font-size: 2em;
+  line-height: 40px;
+  height: 40px;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color:rgb(240, 233, 233);
+  display: block;
+  padding: 5px;
+}
+
+.footer a:hover {
+  background-color: rgb(28, 123, 146);
+  padding: 5px;
+}
+
+.footer a.active {
+  background-color: rgb(28, 123, 146);
+  cursor: default;
+}
+
+.footer p {
+  font-family: Georgia, serif;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+/* End Footer */
