@@ -5,12 +5,16 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Suzanne Collins Books</title>
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Architects+Daughter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Suzanne Collins</h1>
-    <nav>
+  <header class="header">
+      <img src="images/SCsignature.png" alt="Suzanne Collins signature"/>
+    <nav class="main-navigation">
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -18,14 +22,26 @@
         <li>
           <a href="bio.html">Bio</a>
         </li>
-        <li>
-         <a href="books.html">Books</a>
+        <li class="dropdown">
+          <a href="books.html" class="dropbtn">Books</a>
+          <div class="dropdown-content">
+            <a href="1hunger.html">The Hunger Games</a>
+            <a href="2catchingfire.html">Catching Fire</a>
+            <a href="3mockingjay.html">Mockingjay</a>
+            <a href="4yotj.html">Year of the Jungle</a>
+            <a href="5overlander.html">Gregor the Overlander</a>
+            <a href="6prophecy.html">Gregor and the Prophecy of Bane</a>
+            <a href="7warmbloods.html">Gregor and the Curse of the Warmbloods</a>
+            <a href="8secret.html">Gregor and the Marks of Secret</a>
+            <a href="9claw.html">Gregor and the Code of Claw</a>
+            <a href="10mcbutton.html">When Charlie McButton Lost Power</a>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="book-page">
     <img src="images/Charlie_Cover.jpg" alt="Book cover art of When Charlie McButton Lost Power"/>
 
     <p>"A clever, humorous story in rhyme. Charlie's techno-driven world comes to a crashing halt when a thunderstorm causes a power outage. His mother advises, "You'll have to find something without plugs to play./​Read a book!/​Clean your room!/​Sing a song!/​Model clay!" Uninspired, Charlie finally remembers an old handheld video game, but the battery is missing. Desperate, he steals one from his sister's talking doll and ends up in the time-out chair. Feeling remorseful when the little girl starts crying, he seeks her out and the two have a grand time playing games and pretending to be dragons and wizards. When the power returns, Charlie is ready to retreat to his "handsets and bots" but decides that it might be fun to spend some time with his sister as well. The hilarious cartoon illustrations are bold and appealing and depict the siblings' many emotions with exaggerated clarity. While the mother appears only as a hand patting her panicked son's head, the family dog is usually present, patiently enduring a hose-down from little Isabel Jane or angrily reproving Charlie for hurting her feelings. Pair this tale with Glenn McCoy's Penny Lee and Her TV (Hyperion, 2002) for a fun storytime during 'TV Turnoff Week.'"<br />
@@ -40,7 +56,7 @@
       &#8210Kirkus Reviews</p>
   </main>
 
-  <footer>
+  <footer class="footer">
       <ul>
         <li>
           <a href="contact.html">Contact</a>

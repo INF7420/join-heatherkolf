@@ -1,73 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Suzanne Collins Books</title>
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Architects+Daughter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Suzanne Collins</h1>
-    <nav>
+  <header class="header">
+    <img src="images/SCsignature.png" alt="Suzanne Collins signature" />
+    <nav class="main-navigation">
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html" class="active">Home</a>
         </li>
         <li>
           <a href="bio.html">Bio</a>
         </li>
-        <li>
-         <a href="books.html">Books</a>
+        <li class="dropdown">
+          <a href="books.html" class="dropbtn">Books</a>
+          <div class="dropdown-content">
+            <a href="1hunger.html">The Hunger Games</a>
+            <a href="2catchingfire.html">Catching Fire</a>
+            <a href="3mockingjay.html">Mockingjay</a>
+            <a href="4yotj.html">Year of the Jungle</a>
+            <a href="5overlander.html">Gregor the Overlander</a>
+            <a href="6prophecy.html">Gregor and the Prophecy of Bane</a>
+            <a href="7warmbloods.html">Gregor and the Curse of the Warmbloods</a>
+            <a href="8secret.html">Gregor and the Marks of Secret</a>
+            <a href="9claw.html">Gregor and the Code of Claw</a>
+            <a href="10mcbutton.html">When Charlie McButton Lost Power</a>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h1>Welcome!</h1>
-    <figure>
-      <img src="images/central_park.jpg" alt="Author Suzanne Collins nose-to-nose with a rat statue in Central Park"/>
-        <figcaption>Fly you high!</figcaption>
-    </figure>
+  <main class="home">
+      <div class="landing">
+      <img src="images/Writers_desk.jpg" alt="Writer's desk with typewriter and flowers"/>
+    </div>
 
-    <h2>The Hunger Games</h2>
+    <div class="trilogy">
+      <h2>The Hunger Games</h2>
       <ul>
         <li>
-          <a href="books.html"><img src="images/The_Hunger_Games.jpg" alt="Book cover art of The Hunger Games"/></a>
+          <a href="books.html"><img src="images/The_Hunger_Games.jpg" alt="Book cover art of The Hunger Games" /></a>
         </li>
         <li>
-          <a href="books.html"><img src="images/Catching_Fire.jpg" alt="Book cover art of Catching Fire"/></a>
+          <a href="books.html"><img src="images/Catching_Fire.jpg" alt="Book cover art of Catching Fire" /></a>
         </li>
         <li>
-          <a href="books.html"><img src="images/Mockingjay.JPG" alt="Book cover art of Mockingjay"/></a>
+          <a href="books.html"><img src="images/Mockingjay.JPG" alt="Book cover art of Mockingjay" /></a>
         </li>
       </ul>
+    </div>
 
-    <h2>Recent News</h2>
+    <div class="recent-news">
+      <h2>Recent News</h2>
       <ul>
         <li>
           <figure>
-            <a href="https://ew.com/books/2018/09/20/tatiana-maslany-hunger-games-audiobook/" target="_blank"><img src="images/maslany.png" alt="Tatiana Maslany at a microphone holding The Hunger Games book"/></a>
+            <a href="https://ew.com/books/2018/09/20/tatiana-maslany-hunger-games-audiobook/" target="_blank"><img src="images/maslany.png"
+                alt="Tatiana Maslany at a microphone holding The Hunger Games book" />
               <figcaption>Special Edition Hunger Games Audiobook</figcaption>
+            </a>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="https://ew.com/books/2018/04/19/hunger-games-10th-anniversary-edition/" target="_blank"><img src="images/special_edition.png" alt="Special Edition covers of The Hunger Games, Catching Fire, and Mockingjay"/></a>
+            <a href="https://ew.com/books/2018/04/19/hunger-games-10th-anniversary-edition/" target="_blank"><img src="images/special_edition.png"
+                alt="Special Edition covers of The Hunger Games, Catching Fire, and Mockingjay" />
               <figcaption>The Hunger Games 10th Anniversary Edition</figcaption>
+            </a>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="https://variety.com/2018/film/news/lionsgate-launching-hunger-games-in-concert-tour-1202750292/" target="_blank"><img src="images/Katniss.png" alt="Jennifer Lawrence as Katniss with bow and arrow"/></a>
+            <a href="https://variety.com/2018/film/news/lionsgate-launching-hunger-games-in-concert-tour-1202750292/"
+              target="_blank"><img src="images/Katniss.png" alt="Jennifer Lawrence as Katniss with bow and arrow" />
               <figcaption>Lionsgate Launching Hunger Games Concert Tour</figcaption>
+            </a>
           </figure>
         </li>
       </ul>
+    </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <ul>
       <li>
         <a href="contact.html">Contact</a>
@@ -83,4 +109,5 @@
   </footer>
 
 </body>
+
 </html>
