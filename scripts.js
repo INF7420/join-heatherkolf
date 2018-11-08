@@ -17,13 +17,13 @@ var hasError = function (field) {
 	if (validity.valid) return;
 
 	// If field is required and empty
-	if (validity.valueMissing) return 'Please fill out this field.';
+	if (validity.valueMissing) return <span>'Please fill out this field.'</span>;
 
 	// If not the right type
 	if (validity.typeMismatch) {
 
 		// Email
-		if (field.type === 'email') return 'Please enter an email address.';
+		if (field.type === 'email') return <span>'Please enter an email address.'</span>;
 
 		// URL
 		if (field.type === 'url') return 'Please enter a URL.';
