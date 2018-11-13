@@ -131,6 +131,26 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media screen and (max-width: 320px) {
+  .main-navigation {
+    text-align: center;
+  }
+  .main-navigation li {
+    padding: 0px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-navigation {
+    text-align: center;
+  }
+  .main-navigation li {
+    padding: 0px;
+    font-size: 2em;
+  }
+}
 /* End Current Navigation */
 
 /* When this media query is active, can't select items from dropdown Books menu...
@@ -401,20 +421,26 @@ h2 {
   padding-left: 0;
   text-align: center;
   padding-top: 120px;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: Georgia, serif;
 }
 
-.terms h3 {
-  font-size: 1.5em;
-}
-
-.terms p {
-  font-size: 1.2em;
-}
-
 .terms li {
-  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.terms .sublist {
+  padding-bottom: 0px;
+}
+
+.terms .heading {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.terms .text {
+  font-size: .8em;
+  font-weight: lighter;
 }
 /* End Terms Page */
 
