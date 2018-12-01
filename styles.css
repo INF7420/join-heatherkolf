@@ -1,4 +1,3 @@
-
 .header {
   background: rgb(95, 34, 34);
   position: fixed;
@@ -91,17 +90,19 @@
   margin-right: -25px;
 }
 
-.main-navigation li a, .dropbtn {
+.main-navigation li a,
+.dropbtn {
   display: inline-block;
-  color:rgb(248, 246, 245);
+  color: rgb(248, 246, 245);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   width: 200px;
 }
 
-.main-navigation li a:hover, .dropdown:hover .dropbtn {
-  background-color:rgb(122, 104, 104);
+.main-navigation li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(122, 104, 104);
 }
 
 .main-navigation li.dropdown {
@@ -125,32 +126,14 @@
 }
 
 .dropdown-content a.active {
-  background-color:rgb(122, 104, 104) !important;
+  background-color: rgb(122, 104, 104) !important;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media screen and (max-width: 320px) {
-  .main-navigation {
-    text-align: center;
-  }
-  .main-navigation li {
-    padding: 0px;
-    font-size: 2em;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .main-navigation {
-    text-align: center;
-  }
-  .main-navigation li {
-    padding: 0px;
-    font-size: 2em;
-  }
-}
 /* End Current Navigation */
 
 /* When this media query is active, can't select items from dropdown Books menu...
@@ -181,11 +164,12 @@
 .trilogy {
   text-align: center;
 }
+
 .trilogy ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  }
+}
 
 .trilogy li {
   margin-right: -5px;
@@ -232,6 +216,7 @@
   font-family: 'Antic Slab', serif;
   text-align: center;
 }
+
 /* End Home Page */
 
 /* Begin Bio Page */
@@ -239,6 +224,7 @@
   background-color: rgb(240, 233, 218);
   padding-top: 150px;
 }
+
 .bio img {
   float: left;
   padding-right: 40px;
@@ -286,6 +272,7 @@
   text-align: center;
   padding-bottom: 50px;
 }
+
 /* End Bio Page */
 
 /* Begin Books Page */
@@ -317,6 +304,7 @@
   column-count: 2;
   padding: 20px;
 }
+
 .previous-books img {
   width: 250px;
   float: left;
@@ -336,6 +324,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 /* End Books Page */
 
 
@@ -350,6 +339,7 @@ h1 {
   font-family: 'Shadows Into Light';
   font-size: 5em;
 }
+
 h2 {
   font-family: 'Shadows Into Light';
   padding-top: 20px;
@@ -357,6 +347,7 @@ h2 {
   font-size: 4em;
   color: rgb(56, 8, 6)
 }
+
 /* End Universal Misc Design */
 
 /* Begin Contact Page */
@@ -365,6 +356,7 @@ h2 {
   padding-left: 40px;
 
 }
+
 .contact h1 {
   padding-left: 0;
   text-align: center;
@@ -384,6 +376,7 @@ h2 {
 .contact li {
   font-size: 1.2em;
 }
+
 /* End Contact Page */
 
 /* Begin Privacy Page */
@@ -391,6 +384,7 @@ h2 {
   font-family: Georgia, serif;
   padding-left: 40px;
 }
+
 .privacy h1 {
   padding-left: 0;
   text-align: center;
@@ -410,6 +404,7 @@ h2 {
 .privacy li {
   font-size: 1.2em;
 }
+
 /* End Privacy Page */
 
 /* Begin Terms Page */
@@ -417,6 +412,7 @@ h2 {
   font-family: Georgia, serif;
   padding-left: 40px;
 }
+
 .terms h1 {
   padding-left: 0;
   text-align: center;
@@ -442,6 +438,7 @@ h2 {
   font-size: .8em;
   font-weight: lighter;
 }
+
 /* End Terms Page */
 
 /* Begin Individual Book Pages */
@@ -461,14 +458,16 @@ h2 {
   padding-bottom: 20px;
   width: 350px;
 }
+
 /* End Individual Book Pages */
 
 /* Begin Footer */
 .footer {
   width: 100%;
-  background-color:rgb(95, 34, 34);
+  background-color: rgb(95, 34, 34);
   color: white;
   text-align: center;
+  padding: 5px;
 }
 
 .footer ul {
@@ -490,7 +489,7 @@ h2 {
 
 .footer a {
   text-decoration: none;
-  color:rgb(240, 233, 233);
+  color: rgb(240, 233, 233);
   display: block;
   padding: 5px;
 }
@@ -510,6 +509,7 @@ h2 {
   font-size: 1em;
   padding-bottom: 10px;
 }
+
 /* End Footer */
 
 @media screen and (max-width: 320px) {
@@ -619,4 +619,84 @@ textarea {
 .thanks p {
   color: rgb(95, 34, 34);
   font-size: 1.3em;
+}
+
+@media screen and (max-width: 320px) {
+
+  .main-navigation li {
+    font-size: 1.5em;
+    float: left;
+    margin-right: 0px;
+    padding-top: 5px;
+  }
+
+  .main-navigation li a,
+  .dropbtn {
+    display: inline;
+    padding: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .main-navigation .dropdown-content a {
+    display: block;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 100px;
+  }
+
+  .dropdown-content {
+    font-size: .6em;
+    display: none;
+  }
+
+  .footer li {
+    font-size: 1em;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 30%;
+    margin-left: -30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-navigation li {
+    font-size: 1.5em;
+    float: left;
+    margin-right: 0px;
+    padding-top: 5px;
+  }
+
+  .main-navigation li a,
+  .dropbtn {
+    display: inline;
+    padding: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .main-navigation .dropdown-content a {
+    display: block;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 2px;
+    padding-right: 100px;
+  }
+
+  .dropdown-content {
+    font-size: .6em;
+    display: none;
+  }
+
+  .footer li {
+    font-size: 1em;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 30%;
+    margin-left: -30px;
+  }
+
 }
